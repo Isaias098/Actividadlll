@@ -1,0 +1,46 @@
+﻿<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Pages.MainPage"
+             BackgroundColor="Black">
+    <ContentPage.Content>
+        <Grid RowDefinitions="*, Auto, Auto">
+            <StackLayout Grid.Row="1" Spacing="15" VerticalOptions="Center">
+                <!-- Botón para llamar al 911 -->
+                <Button x:Name="CounterBtn" 
+                        Text="Llamar al 911"
+                        FontSize="24"
+                        BackgroundColor="#d9534f"
+                        TextColor="White"
+                        CornerRadius="10"
+                        HeightRequest="60"
+                        Clicked="OnCounterBtnClicked"/>
+
+                <!-- Botón para enviar ubicación -->
+                <Button Text="Enviar Ubicación"
+                        FontSize="24"
+                        BackgroundColor="#0275d8"
+                        TextColor="White"
+                        CornerRadius="10"
+                        HeightRequest="60"
+                        Clicked="OnShareLocationClicked" />
+
+                <!-- Botón para información de primeros auxilios -->
+                <Button Text="Primeros Auxilios"
+                        FontSize="24"
+                        BackgroundColor="#5cb85c"
+                        TextColor="White"
+                        CornerRadius="10"
+                        HeightRequest="60"
+                        Clicked="OnFirstAidClicked" />
+            </StackLayout>
+
+            <!-- Pie de página -->
+            <Label Grid.Row="2"
+                   Text="Tu app de emergencias confiable"
+                   FontSize="14"
+                   TextColor="White"
+                   HorizontalOptions="Center"
+                   Margin="0,20,0,10" />
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

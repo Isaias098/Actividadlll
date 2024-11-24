@@ -1,0 +1,12 @@
+<Shell xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+       xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+       xmlns:local="clr-namespace:Pages"
+       x:Class="Pages.AppShell">
+
+    <ShellContent Title="Emergencias"
+                  ContentTemplate="{DataTemplate local:MainPage}" />
+
+    <ShellContent Title="Configuración"
+                  ContentTemplate="{DataTemplate local:SettingsPage}" />
+
+</Shell>
